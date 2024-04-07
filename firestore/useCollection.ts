@@ -143,7 +143,7 @@ const getValuesFromSnapshots = <T>(
 ): T[] | undefined => {
   return useMemo(
     () =>
-      (snapshots?.docs.map((doc) => doc.data(options)) ?? initialValue) as
+      (snapshots?.docs.map((doc) => ({id: doc.id, ...doc.data(options)})) ?? initialValue) as
         | T[]
         | undefined,
     [snapshots, options]
