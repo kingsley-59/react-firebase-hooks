@@ -47,3 +47,4 @@ To upgrade your project from v4 to v5 check out the [Release Notes](https://gith
 ## License
 
 - See [LICENSE](/LICENSE)
+"# react-firebase-hooks" 
